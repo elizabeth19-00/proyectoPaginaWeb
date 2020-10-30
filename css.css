@@ -1,0 +1,293 @@
+html, body {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    background: #f2f2f2;
+
+}
+
+header {
+    width: 100%;
+    height: 600px;
+    background: #C6FFDD;  /* fallback for old browsers */
+    background: linear-gradient(to right, hsla(358, 89%, 72%, 0.788), hsla(42, 94%, 75%, 0.733), #c6ffddbd),url(../DEPORTES.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to right, hsla(358, 89%, 72%, 0.788), hsla(42, 94%, 75%, 0.733), #c6ffddbd),url(../DEPORTES.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background-size: cover;
+background-attachment: fixed;
+position: relative;
+font-family: cursive;
+
+}
+
+
+.geografico {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+nav{
+    text-align: left;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color: black;
+    font-weight: 1000;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+   
+   text-decoration: underline;
+   
+}
+
+header .encabezado{
+   display: flex; 
+   height: 430px;
+   width: 100%;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.encabezado h1{
+   font-size: 80px;
+   color: black;
+   
+
+}
+
+.encabezado h2{
+   font-size: 50%;
+   font-size:  30px;
+   color: blue;
+   align-content: center;
+}
+
+.titulo  h1{
+    font-family: cursive;
+    color: blue;
+}
+.tittle {
+    text-align: center;
+    font-size: 40px;
+    color: #6a6a6a;
+    margin-top: 100px;
+    font-weight: 100;
+}
+
+
+.contenedor-sobrenosotros h2{
+    font-family: cursive;
+    text-align: center;
+    color: blue;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    background:#f2f2f2;
+
+}
+
+.container .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .card img{
+    width: 330px;
+    height: 220px;
+}
+
+.container .card h4{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: cursive;
+    color: blue;
+}
+
+.container .card a{
+    font-weight: 500;
+    text-decoration: none;
+    color: blue;
+    text-align: center;
+}
+ 
+.contenedor-sobre{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.imagen-sobrenosotros{
+    width: 48%;
+
+}
+
+.contenedor-acerca .contenido-textos{
+
+    width: 48%;
+}
+
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+
+.contenido-textos h3 span{
+    background: blue;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+     text-align: center;
+     width: 30px;
+     height: 30px;
+     padding: 2px;
+     box-shadow: 0, 0, 6px, 0 rgba(0, 0, 0, .5);
+     margin-right: 5px;
+
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+
+}
+
+
+
+
+.imagenes {
+    background: #f2f2f2;
+}
+
+.portafolio {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+
+}
+
+.contenedor h2{
+    font-family: cursive;
+    color: blue;
+    text-align: center;
+}
+
+.imagenes-portafolio{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    height: 150px;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0  rgba(0, 0, 0, 0.5);
+
+}
+
+.imagenes-portafolio img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(273, 91%, 27%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.hover .img {
+    width: 50px;
+
+}
+
+.hover p{
+    color: #fff;
+    font-family: cursive;
+}
+
+.imagenes-portafolio:hover .hover{
+    transform: scale(1);
+}
+
+.servicios {
+     background: #f2f2f2;
+     padding-bottom: 30px;
+
+}
+
+.servicios .titulo {
+    font-family: cursive;
+    color: blue;
+    text-align: center;
+}
+
+.servicio-cont{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.servicio-ind {
+width: 28%;
+text-align: center;
+}
+
+.servicio-ind img {
+width: 90%;
+}
+
+.servicio-ind h3{
+    margin: 10px 0;
+    font-family: Arial;
+    color: blue;
+}
+
+.servicio-ind p{
+    font-weight: 300;
+    text-align: justify;
+    font-family: cursive;
+}
+
